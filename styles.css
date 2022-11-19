@@ -139,6 +139,7 @@ footer .logo span {
 .filter-button:focus {
 	color: #fff;
 	background-color: var(--blue-color);
+	cursor: pointer;
 }
 .project-name {
 	font-weight: 700;
