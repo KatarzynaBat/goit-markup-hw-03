@@ -76,6 +76,10 @@ footer .logo span {
   color: var(--white-color);
   background-color: var(--blue-color);
 }
+.order-button:hover,
+.order-button:focus {
+  cursor: pointer;
+}
 .main-header {
   font-weight: 900;
   font-size: 44px;
