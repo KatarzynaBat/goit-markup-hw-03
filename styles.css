@@ -7,13 +7,13 @@
   --dark-black-color: #000;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--black-color);
   font-size: 14px;
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .top-bar a {
   text-decoration: none;
@@ -24,23 +24,23 @@ body {
 .top-bar.nav a {
   color: var(--black-color);
 }
-.contact [href^='mailto'],
-.contact [href^='tel'] {
+.contact [href^="mailto"],
+.contact [href^="tel"] {
   color: var(--gray-color);
   text-decoration: none;
   font-style: normal;
 }
-.contact [href^='mailto']:hover,
-.contact [href^='mailto']:focus,
-.contact [href^='tel']:hover,
-.contact [href^='tel']:focus,
+.contact [href^="mailto"]:hover,
+.contact [href^="mailto"]:focus,
+.contact [href^="tel"]:hover,
+.contact [href^="tel"]:focus,
 .top-bar.nav a:hover,
 .top-bar.nav a:focus {
   color: var(--blue-color);
   cursor: pointer;
 }
 .logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
