@@ -31,8 +31,10 @@ body {
   font-style: normal;
 }
 
-.top-bar a:hover,
-.top-bar a:focus,
+.navigation a:hover,
+.navigation a:focus,
+.contact a:hover,
+.contact a:focus,
 .bottom-mail:hover,
 .bottom-mail:focus,
 .bottom-number:hover,
