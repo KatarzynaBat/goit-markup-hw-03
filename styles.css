@@ -5,6 +5,7 @@
   --dark-background-color: #2f303a;
   --white-color: #fff;
   --dark-black-color: #000;
+  --transparent-grey-color: color: rgba(255, 255, 255, 0.6) 
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -21,21 +22,21 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.top-bar.nav a {
+.top-bar .navigation a {
   color: var(--black-color);
 }
-.contact [href^="mailto"],
-.contact [href^="tel"] {
+.contact a {
   color: var(--gray-color);
   text-decoration: none;
   font-style: normal;
 }
-.contact [href^="mailto"]:hover,
-.contact [href^="mailto"]:focus,
-.contact [href^="tel"]:hover,
-.contact [href^="tel"]:focus,
-.top-bar.nav a:hover,
-.top-bar.nav a:focus {
+
+.top-bar a:hover,
+.top-bar a:focus,
+.bottom-mail:hover,
+.bottom-mail:focus,
+.bottom-number:hover,
+.bottom-number:focus {
   color: var(--blue-color);
   cursor: pointer;
 }
@@ -58,14 +59,22 @@ footer .logo {
 footer .logo span {
   color: #fff;
 }
-.bottom {
+
+.bottom-adress {
+  text-decoration: none;
   font-style: normal;
-  font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
-.adress {
   color: var(--white-color);
+  
+}
+.bottom-mail,
+.bottom-number{
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+color: var(--transparent-grey-color);
 }
 .order-button {
   font-weight: 700;
@@ -120,14 +129,13 @@ footer .logo span {
   display: block;
   letter-spacing: 0.03em;
 }
-.field-name.main {
+.team .field-name {
   text-align: center;
 }
-.field-name.portfolio {
+.portfolio .field-name {
   text-align: start;
 }
 .filter-button {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
@@ -145,7 +153,7 @@ footer .logo span {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-footer {
+.bottom {
   background-color: var(--dark-background-color);
 }
 .main-header-box {
