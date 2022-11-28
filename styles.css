@@ -4,8 +4,20 @@
   --gray-color: #757575;
   --dark-background-color: #2f303a;
   --white-color: #fff;
+  --light-background-color: #F5F4FA;
   --dark-black-color: #000;
   --transparent-grey-color: color: rgba(255, 255, 255, 0.6) 
+}
+
+*{
+  margin: 0;
+}
+ul{
+margin-block-start: 0;
+margin-block-end: 0;
+margin-inline-start: 0;
+margin-inline-end: 0;
+padding-inline-start: 0;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -13,9 +25,6 @@ body {
   font-size: 14px;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-}
 .top-bar a {
   text-decoration: none;
   font-weight: 500;
@@ -79,6 +88,7 @@ footer .logo span {
 color: var(--transparent-grey-color);
 }
 .order-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -86,6 +96,10 @@ color: var(--transparent-grey-color);
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ border-radius: 4px;
+ width: 200px;
+ padding: 10px 0;
 }
 .order-button:hover,
 .order-button:focus {
@@ -99,6 +113,9 @@ color: var(--transparent-grey-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  width: 692px;
+
+
 }
 .second-header {
   font-weight: 700;
@@ -106,6 +123,7 @@ color: var(--transparent-grey-color);
   line-height: 1.67;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 50px;
 }
 .business-description-header {
   line-height: 1.4;
@@ -132,20 +150,27 @@ color: var(--transparent-grey-color);
   display: block;
   letter-spacing: 0.03em;
 }
-.team .field-name {
+
+.business-team-list .field-name {
   text-align: center;
   line-height: 1.18;
  
 }
-.portfolio .field-name {
+.portfolio-list .field-name {
   text-align: start;
   line-height: 1.88;
+  margin-top: 4px;
 }
 .filter-button {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  width: 121px;
+  background: var(--light-background-color);
+border-radius: 4px;
+border: 0;
+padding: 6px 0;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -165,3 +190,99 @@ color: var(--transparent-grey-color);
 .main-header-box {
   background-color: var(--dark-background-color);
 }
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.top-bar{
+  border-bottom: 1px solid #ECECEC;
+}
+.top-bar .container{
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.navigation{
+  margin-left: 93px;
+  margin-right: 371px;
+}
+.navigation-links{
+  display: flex;
+  list-style: none;
+  gap: 46px;
+}
+.contact{
+  display: flex;
+  gap: 50px;
+}
+.main-header-box .container{
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.business-description .container
+{
+  padding-top: 94px ;
+}
+.business-activities .container,
+.business-team .container,
+
+.portfolio .container{
+  padding: 94px 0
+}
+.business-description-list,
+.business-activities-list,
+.business-team-list,
+.filter-button-list,
+.portfolio-list
+ {
+  display: flex;
+list-style: none;
+gap: 30px
+}
+.business-team{
+  background-color: var(--light-background-color);
+}
+.employee-profile{
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.employee-profile figcaption{
+  padding: 30px 0;
+}
+.employee-profile .field-name {
+  margin-top: 10px
+}
+.bottom .container{
+  padding: 60px 0;
+}
+.bottom .logo{
+  margin-bottom: 20px;
+}
+.bottom-adress-list{
+  list-style: none;
+  margin-top: 20px
+}
+.bottom-adress-list li+li {
+  margin-top: 9px
+}
+.filter-button-list{
+justify-content: center;
+margin-bottom: 50px;
+}
+.portfolio-list{
+  flex-wrap: wrap;
+}
+.portfolio-list figure{
+border: 1px solid #EEEEEE;}
+
+.portfolio-list figcaption{
+  padding: 20px 24px;
+}
+.portfolio-list .field-name
