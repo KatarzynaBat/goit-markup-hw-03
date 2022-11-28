@@ -227,12 +227,9 @@ padding: 6px 0;
 
 .business-description .container
 {
-  padding-top: 94px ;
+  padding-bottom: 0px ;
 }
-.business-activities .container,
-.business-team .container,
-
-.portfolio .container{
+.container{
   padding: 94px 0
 }
 .business-description-list,
@@ -279,10 +276,12 @@ margin-bottom: 50px;
 .portfolio-list{
   flex-wrap: wrap;
 }
-.portfolio-list figure{
-border: 1px solid #EEEEEE;}
+
 
 .portfolio-list figcaption{
   padding: 20px 24px;
+  border-right:  1px solid #EEEEEE;
+  border-bottom:  1px solid #EEEEEE;
+  border-left:  1px solid #EEEEEE;
+
 }
-.portfolio-list .field-name
